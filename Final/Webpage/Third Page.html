@@ -1,0 +1,49 @@
+
+
+<html>
+    <head>
+        <title>Contact Us!</title>
+        <script>
+            function getData()
+            {
+                var name = document.getElementById("txtName").value;
+                var Email = document.getElementById("txtEmail").value;
+                if (name=="") {
+                    document.getElementById("txtName").style.backgroundColor = "red";
+                    document.getElementById("txtName").focus();                    
+                } else {
+                    document.getElementById("txtName").style.backgroundColor = "white";
+                    document.getElementById("txtName").focus();                      
+                }
+                if (Email=="") {
+                    document.getElementById("txtEmail").style.backgroundColor = "red";
+                    document.getElementById("txtEmail").focus();                    
+                } else {
+                    document.getElementById("txtEmail").style.backgroundColor = "white";
+                    document.getElementById("txtEmail").focus();                      
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="txtEmail"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onclick="getData();">Submit</button></td>
+            </tr>
+            <input type="radio" name="tos" value="Yes">Yes<br>             <input type="radio" name="tos" value="Yes">No<br>
+        </table>
+        <div id="finalResult"></div>
+        <a href="First Page.html">First Page</a>        
+        <a href="Second Page.html">Second Page</a>
+        <a>Third Page</a>
+        <a href="Fourth Page.html">Fourth Page</a>
+    </body>
+</html>

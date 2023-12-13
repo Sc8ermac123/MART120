@@ -1,0 +1,12 @@
+span{
+    color: white;
+    background-color: blueviolet;
+}
+#SpecificColor{
+    color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+body {
+    background-image: url("background.jpg");
+}
